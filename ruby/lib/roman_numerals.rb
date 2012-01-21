@@ -2,7 +2,7 @@ module RomanNumerals
   extend self
 
   def to_roman(number)
-    "I"
+    "I" * number
   end
 
 end
