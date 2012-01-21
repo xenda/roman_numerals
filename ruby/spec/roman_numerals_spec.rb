@@ -34,4 +34,8 @@ describe "Convert numeral to roman" do
 
   end
 
+  it "converts 9 to IX" do
+    9.to_roman.should == "IX"
+  end
+
 end
