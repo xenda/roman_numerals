@@ -34,12 +34,20 @@ describe "Convert numeral to roman" do
 
   end
 
-  it "converts 9 to IX" do
-    9.to_roman.should == "IX"
-  end
+  context "9 to 39" do
 
-  it "converts 10 to X" do
-    10.to_roman.should == "X"
+    it "converts 9 to IX" do
+      9.to_roman.should == "IX"
+    end
+
+    it "converts 10 to X" do
+      10.to_roman.should == "X"
+    end
+
+    it "converts 39 to XXXIX" do
+      39.to_roman.should == "XXXIX"
+    end
+
   end
 
 end
