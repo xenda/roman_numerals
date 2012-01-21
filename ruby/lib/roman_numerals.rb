@@ -1,5 +1,4 @@
 module RomanNumerals
-  extend self
 
   ROMANS = {
     "V"  => 5,
