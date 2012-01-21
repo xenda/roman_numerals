@@ -22,4 +22,8 @@ describe "Convert numeral to roman" do
     4.to_roman.should == "IV"
   end
 
+  it "converts 5 to V" do
+    5.to_roman.should == "V"
+  end
+
 end
