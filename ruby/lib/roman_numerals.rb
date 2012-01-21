@@ -1,6 +1,7 @@
 module RomanNumerals
 
   ROMANS = {
+    "X"  => 10,
     "IX" => 9,
     "V"  => 5,
     "IV" => 4,

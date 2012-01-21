@@ -38,4 +38,8 @@ describe "Convert numeral to roman" do
     9.to_roman.should == "IX"
   end
 
+  it "converts 10 to X" do
+    10.to_roman.should == "X"
+  end
+
 end
