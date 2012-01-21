@@ -2,7 +2,7 @@ require 'roman_numerals'
 
 describe "Convert numeral to roman" do
 
-  context "Convert 1..3 to romans" do
+  context "1 to 3" do
 
     it "converts 1 to I" do
       1.to_roman.should == "I"
@@ -18,7 +18,8 @@ describe "Convert numeral to roman" do
 
   end
 
-  context "Convert 4..8 to romans" do
+  context "4 to 8" do
+
     it "converts 4 to IV" do
       4.to_roman.should == "IV"
     end
@@ -30,6 +31,7 @@ describe "Convert numeral to roman" do
     it "converts 8 to VIII" do
       8.to_roman.should == "VIII"
     end
+
   end
 
 end
