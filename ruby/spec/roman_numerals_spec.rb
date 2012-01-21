@@ -89,7 +89,7 @@ describe "Convert numeral to roman" do
     end
 
     it "converts 500 to D" do
-      400.to_roman.should == "CD"
+      500.to_roman.should == "D"
     end
 
     it "converts 899 to DCCCXCIX" do
