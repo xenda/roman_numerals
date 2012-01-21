@@ -1,8 +1,7 @@
-module RomanNumerals
-  extend self
+class Fixnum
 
-  def to_roman(number)
-    "I" * number
+  def to_roman
+    "I" * self
   end
 
 end
