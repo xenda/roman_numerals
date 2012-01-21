@@ -14,6 +14,7 @@ module RomanNumerals
     ROMANS.each do |key, value|
       count, numeral = numeral.divmod(value)
       roman << (key * count)
+      break if numeral == 0
     end
 
     roman
