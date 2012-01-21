@@ -50,4 +50,8 @@ describe "Convert numeral to roman" do
 
   end
 
+  it "converts 40 to XL" do
+    40.to_roman.should == "XL"
+  end
+
 end
