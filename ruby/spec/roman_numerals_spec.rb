@@ -18,4 +18,8 @@ describe "Convert numeral to roman" do
 
   end
 
+  it "converts 4 to IV" do
+    4.to_roman().should == "IV"
+  end
+
 end
