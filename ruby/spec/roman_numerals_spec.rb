@@ -2,7 +2,7 @@ require 'roman_numerals'
 
 describe "Convert numeral to roman" do
 
-  context "Converts 1..3 to romans" do
+  context "Convert 1..3 to romans" do
 
     it "converts 1 to I" do
       1.to_roman.should == "I"
