@@ -1,6 +1,7 @@
 module RomanNumerals
+  extend self
 
-  def self.to_roman(number)
+  def to_roman(number)
     "I"
   end
 
