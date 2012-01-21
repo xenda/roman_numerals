@@ -5,21 +5,21 @@ describe "Convert numeral to roman" do
   context "Converts 1..3 to romans" do
 
     it "converts 1 to I" do
-      1.to_roman().should == "I"
+      1.to_roman.should == "I"
     end
 
     it "converts 2 to II" do
-      2.to_roman().should == "II"
+      2.to_roman.should == "II"
     end
 
     it "converts 3 to III" do
-      3.to_roman().should == "III"
+      3.to_roman.should == "III"
     end
 
   end
 
   it "converts 4 to IV" do
-    4.to_roman().should == "IV"
+    4.to_roman.should == "IV"
   end
 
 end
