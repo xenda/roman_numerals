@@ -50,8 +50,20 @@ describe "Convert numeral to roman" do
 
   end
 
-  it "converts 40 to XL" do
-    40.to_roman.should == "XL"
+  context "40 to 89" do
+
+    it "converts 40 to XL" do
+      40.to_roman.should == "XL"
+    end
+
+    it "converts 50 to XL" do
+      50.to_roman.should == "L"
+    end
+
+    it "converts 89 to LXIX" do
+      89.to_roman.should == "LXXXIX"
+    end
+
   end
 
 end
