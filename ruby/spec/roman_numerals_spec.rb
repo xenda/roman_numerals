@@ -66,4 +66,36 @@ describe "Convert numeral to roman" do
 
   end
 
+  context "90 to 399" do
+    
+    it "converts 90 to XC" do
+      90.to_roman.should == "XC"
+    end
+
+    it "converts 100 to C" do
+      100.to_roman.should == "C"
+    end
+
+    it "converts 399 to CCCXCIX" do
+      399.to_roman.should == "CCCXCIX"
+    end
+
+  end
+
+  context "400 to 899" do
+
+    it "converts 400 to CD" do
+      400.to_roman.should == "CD"
+    end
+
+    it "converts 500 to D" do
+      400.to_roman.should == "CD"
+    end
+
+    it "converts 899 to DCCCXCIX" do
+      899.to_roman.should == "DCCCXCIX"
+    end
+
+  end
+
 end
