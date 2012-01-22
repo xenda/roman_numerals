@@ -108,7 +108,7 @@ describe "Convert numeral to roman" do
       1000.to_roman.should == "M"
     end
 
-    it "converts 3999 to " do
+    it "converts 3999 to MMMCMXCIX" do
       3999.to_roman.should == "MMMCMXCIX"
     end
 
