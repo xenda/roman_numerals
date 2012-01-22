@@ -98,4 +98,20 @@ describe "Convert numeral to roman" do
 
   end
 
+  context "900 to 3999" do
+
+    it "converts 900 to CM" do
+      900.to_roman.should == "CM"
+    end
+
+    it "converts 1000 to M" do
+      1000.to_roman.should == "M"
+    end
+
+    it "converts 3999 to " do
+      3999.to_roman.should == "MMMCMXCIX"
+    end
+
+  end
+
 end
