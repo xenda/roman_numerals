@@ -2,6 +2,11 @@ require 'roman_numerals'
 
 describe "Convert numeral to roman" do
 
+  it "Fixnum include RomanNumerals" do
+    Fixnum.include?(RomanNumerals).should be true
+    1.to_roman.should == RomanNumerals.to_roman(1)
+  end
+
   context "1 to 3" do
 
     it "converts 1 to I" do

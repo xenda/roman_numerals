@@ -1,4 +1,5 @@
 module RomanNumerals
+  extend self
 
   ROMANS = {
     "M"  => 1000,
