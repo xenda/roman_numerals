@@ -1,24 +1,10 @@
-Function.prototype.method = function (name, func) {
-  this.prototype[name] = func;
-  return this;
-};
+var RomanNumerals = function (numeral) {
+  var roman = '', i;
 
-var RomanNumerals = function () {
+  for(i = 0; i < numeral; i+=1) {
+    roman += 'I';
+  }
 
-  return {
-    toRoman: function (numeral) {
-      var roman = '', i;
-
-      for(i = 0; i < numeral; i+=1) {
-        roman += 'I';
-      }
-
-      return roman;
-    }
-  };
+  return roman;
 
 };
-
-Number.method('toRoman', function () {
-  return RomanNumerals().toRoman(this);
-});
