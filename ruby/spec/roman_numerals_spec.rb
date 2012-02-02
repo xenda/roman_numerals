@@ -2,23 +2,18 @@ require 'roman_numerals'
 
 describe "Convert numeral to roman" do
 
-  it "Fixnum include RomanNumerals" do
-    Fixnum.include?(RomanNumerals).should be true
-    1.to_roman.should == RomanNumerals.to_roman(1)
-  end
-
   context "1 to 3" do
 
     it "converts 1 to I" do
-      1.to_roman.should == "I"
+      RomanNumerals.to_roman(1).should == "I"
     end
 
     it "converts 2 to II" do
-      2.to_roman.should == "II"
+      RomanNumerals.to_roman(2).should == "II"
     end
 
     it "converts 3 to III" do
-      3.to_roman.should == "III"
+      RomanNumerals.to_roman(3).should == "III"
     end
 
   end
@@ -26,15 +21,15 @@ describe "Convert numeral to roman" do
   context "4 to 8" do
 
     it "converts 4 to IV" do
-      4.to_roman.should == "IV"
+      RomanNumerals.to_roman(4).should == "IV"
     end
 
     it "converts 5 to V" do
-      5.to_roman.should == "V"
+      RomanNumerals.to_roman(5).should == "V"
     end
 
     it "converts 8 to VIII" do
-      8.to_roman.should == "VIII"
+      RomanNumerals.to_roman(8).should == "VIII"
     end
 
   end
@@ -42,15 +37,15 @@ describe "Convert numeral to roman" do
   context "9 to 39" do
 
     it "converts 9 to IX" do
-      9.to_roman.should == "IX"
+      RomanNumerals.to_roman(9).should == "IX"
     end
 
     it "converts 10 to X" do
-      10.to_roman.should == "X"
+      RomanNumerals.to_roman(10).should == "X"
     end
 
     it "converts 39 to XXXIX" do
-      39.to_roman.should == "XXXIX"
+      RomanNumerals.to_roman(39).should == "XXXIX"
     end
 
   end
@@ -58,15 +53,15 @@ describe "Convert numeral to roman" do
   context "40 to 89" do
 
     it "converts 40 to XL" do
-      40.to_roman.should == "XL"
+      RomanNumerals.to_roman(40).should == "XL"
     end
 
     it "converts 50 to XL" do
-      50.to_roman.should == "L"
+      RomanNumerals.to_roman(50).should == "L"
     end
 
     it "converts 89 to LXIX" do
-      89.to_roman.should == "LXXXIX"
+      RomanNumerals.to_roman(89).should == "LXXXIX"
     end
 
   end
@@ -74,15 +69,15 @@ describe "Convert numeral to roman" do
   context "90 to 399" do
     
     it "converts 90 to XC" do
-      90.to_roman.should == "XC"
+      RomanNumerals.to_roman(90).should == "XC"
     end
 
     it "converts 100 to C" do
-      100.to_roman.should == "C"
+      RomanNumerals.to_roman(100).should == "C"
     end
 
     it "converts 399 to CCCXCIX" do
-      399.to_roman.should == "CCCXCIX"
+      RomanNumerals.to_roman(399).should == "CCCXCIX"
     end
 
   end
@@ -90,15 +85,15 @@ describe "Convert numeral to roman" do
   context "400 to 899" do
 
     it "converts 400 to CD" do
-      400.to_roman.should == "CD"
+      RomanNumerals.to_roman(400).should == "CD"
     end
 
     it "converts 500 to D" do
-      500.to_roman.should == "D"
+      RomanNumerals.to_roman(500).should == "D"
     end
 
     it "converts 899 to DCCCXCIX" do
-      899.to_roman.should == "DCCCXCIX"
+      RomanNumerals.to_roman(899).should == "DCCCXCIX"
     end
 
   end
@@ -106,15 +101,15 @@ describe "Convert numeral to roman" do
   context "900 to 3999" do
 
     it "converts 900 to CM" do
-      900.to_roman.should == "CM"
+      RomanNumerals.to_roman(900).should == "CM"
     end
 
     it "converts 1000 to M" do
-      1000.to_roman.should == "M"
+      RomanNumerals.to_roman(1000).should == "M"
     end
 
     it "converts 3999 to MMMCMXCIX" do
-      3999.to_roman.should == "MMMCMXCIX"
+      RomanNumerals.to_roman(3999).should == "MMMCMXCIX"
     end
 
   end

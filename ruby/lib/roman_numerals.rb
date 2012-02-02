@@ -1,5 +1,4 @@
-module RomanNumerals
-  extend self
+class RomanNumerals
 
   ROMANS = {
     "M"  => 1000,
@@ -17,7 +16,7 @@ module RomanNumerals
     "I"  => 1
   }
 
-  def to_roman(numeral)
+  def self.to_roman(numeral)
     roman = ""
     ROMANS.each do |key, value|
       count, numeral = numeral.divmod(value)
@@ -26,15 +25,6 @@ module RomanNumerals
     end
 
     roman
-  end
-
-end
-
-class Fixnum
-  include RomanNumerals
-
-  def to_roman
-    super self
   end
 
 end
