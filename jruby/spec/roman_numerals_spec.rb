@@ -56,11 +56,11 @@ describe "Convert numeral to roman" do
       40.to_roman.should == "XL"
     end
 
-    it "converts 50 to XL" do
+    it "converts 50 to L" do
       50.to_roman.should == "L"
     end
 
-    it "converts 89 to LXIX" do
+    it "converts 89 to LXXXIX" do
       89.to_roman.should == "LXXXIX"
     end
 
