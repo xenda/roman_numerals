@@ -1,4 +1,5 @@
-class RomanNumerals
+module RomanNumerals
+  extend self
 
   ROMANS = {
     "M"  => 1000,
@@ -16,7 +17,7 @@ class RomanNumerals
     "I"  => 1
   }
 
-  def self.to_roman(numeral)
+  def to_roman(numeral)
     raise "Has no roman representation" unless has_roman?(numeral)
 
     roman = ""
