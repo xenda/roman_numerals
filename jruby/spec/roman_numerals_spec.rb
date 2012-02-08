@@ -114,4 +114,21 @@ describe "Convert numeral to roman" do
 
   end
 
+  context "Numbers must be in range 1..3999" do
+    romanNumeralException = 
+      "java.lang.NumberFormatException: Numbers must be in range 1-3999"
+
+    it "raises error when transforming 0 to roman" do
+      expect { 0.to_roman }.to raise_error romanNumeralException
+    end
+
+    it "raises error when transforming -1 to roman" do
+      expect { -1.to_roman }.to raise_error romanNumeralException
+    end
+
+    it "raises error when transforming -1 to roman" do
+      expect { 4000.to_roman }.to raise_error romanNumeralException
+    end
+  end
+
 end
