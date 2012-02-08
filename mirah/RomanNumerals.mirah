@@ -16,24 +16,24 @@ class RomanValue
 end
 
 class RomanNumerals
-  @@romans = ArrayList.new()
-  @@romans.add(RomanValue.new("M", 1000))
-  @@romans.add(RomanValue.new("CM", 900))
-  @@romans.add(RomanValue.new("D",  500))
-  @@romans.add(RomanValue.new("CD", 400))
-  @@romans.add(RomanValue.new("C",  100))
-  @@romans.add(RomanValue.new("XC",  90))
-  @@romans.add(RomanValue.new("L",   50))
-  @@romans.add(RomanValue.new("XL",  40))
-  @@romans.add(RomanValue.new("X",   10))
-  @@romans.add(RomanValue.new("IX",   9))
-  @@romans.add(RomanValue.new("V",    5))
-  @@romans.add(RomanValue.new("IV",   4))
-  @@romans.add(RomanValue.new("I",    1))
+  @romans = ArrayList.new()
+  @romans.add(RomanValue.new("M", 1000))
+  @romans.add(RomanValue.new("CM", 900))
+  @romans.add(RomanValue.new("D",  500))
+  @romans.add(RomanValue.new("CD", 400))
+  @romans.add(RomanValue.new("C",  100))
+  @romans.add(RomanValue.new("XC",  90))
+  @romans.add(RomanValue.new("L",   50))
+  @romans.add(RomanValue.new("XL",  40))
+  @romans.add(RomanValue.new("X",   10))
+  @romans.add(RomanValue.new("IX",   9))
+  @romans.add(RomanValue.new("V",    5))
+  @romans.add(RomanValue.new("IV",   4))
+  @romans.add(RomanValue.new("I",    1))
 
   class << self
     def romans
-      @@romans
+      @romans
     end
 
     def to_roman(numeral:int)
