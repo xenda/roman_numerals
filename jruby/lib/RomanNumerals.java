@@ -21,16 +21,16 @@ public class RomanNumerals {
       throw new NumberFormatException("Numbers must be in range 1-3999");
     }
     
-    StringBuffer result = new StringBuffer(10);
+    StringBuffer roman = new StringBuffer(10);
     
     for (RomanValue equiv : ROMAN_VALUE_TABLE) {
       while (numeral >= equiv.intValue) {
         numeral -= equiv.intValue;
-        result.append(equiv.romanValue);
+        roman.append(equiv.romanValue);
       }
     }
 
-    return result.toString();
+    return roman.toString();
   }
 
   private static class RomanValue {
