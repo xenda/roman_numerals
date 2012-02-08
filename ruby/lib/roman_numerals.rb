@@ -17,6 +17,8 @@ class RomanNumerals
   }
 
   def self.to_roman(numeral)
+    raise "Has no roman representation" unless has_roman?(numeral)
+
     roman = ""
     ROMANS.each do |key, value|
       count, numeral = numeral.divmod(value)
@@ -25,6 +27,12 @@ class RomanNumerals
     end
 
     roman
+  end
+
+  private
+
+  def has_roman?(numeral)
+    (1..3999).include? numeral
   end
 
 end

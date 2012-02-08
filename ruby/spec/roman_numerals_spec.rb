@@ -114,4 +114,20 @@ describe "Convert numeral to roman" do
 
   end
 
+  context "Numbers must be in range 1..3999" do
+    romanNumeralException = "Has no roman representation"
+
+    it "raises error when transforming 0 to roman" do
+      expect { RomanNumerals.to_roman(0) }.to raise_error romanNumeralException
+    end
+
+    it "raises error when transforming -1 to roman" do
+      expect { RomanNumerals.to_roman(-1) }.to raise_error romanNumeralException
+    end
+
+    it "raises error when transforming -1 to roman" do
+      expect { RomanNumerals.to_roman(4000) }.to raise_error romanNumeralException
+    end
+  end
+
 end
