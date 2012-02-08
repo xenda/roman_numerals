@@ -25,8 +25,8 @@ public class RomanNumerals {
     
     for (RomanValue equiv : ROMAN_VALUE_TABLE) {
       while (numeral >= equiv.intValue) {
-          numeral -= equiv.intValue;
-          result.append(equiv.romanValue);
+        numeral -= equiv.intValue;
+        result.append(equiv.romanValue);
       }
     }
 
@@ -42,4 +42,5 @@ public class RomanNumerals {
       this.romanValue = romanValue;
     }
   }
+
 }
